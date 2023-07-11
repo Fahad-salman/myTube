@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MyTube</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="">
+                    MyTube
+                </a>
+            </div>
+            <div class="main-menu">
+                <a href="">Home</a>
+                <a href="">Browse</a>
+                <a href="">Trend</a>
+            </div>
+            <div class="search-form">
+                <form action="#">
+                    <input type="search" placeholder="search video">
+                    <button>
+                        <i class="fa fa-search" ></i>
+                    </button>
+                </form>
+            </div>
+            <div class="user-menu">
+                <a href="">
+                    Upload
+                    <i class="fa fa-upload" ></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="player" >
+            <video controls src="media/Waves.mp4"></video>
+            <div class="video-details">
+                <div class="video-title">
+                    <h1>Nice Oshen View</h1>
+                    <span class="views" >Views 150K </span>
+                </div>
+                <div class="functions">
+                    <button>
+                        <i class="fa fa-thumbs-up" ></i>
+                    </button>
+                    <button>
+                        <i class="fa fa-thumbs-down" ></i>
+                    </button>
+                    <button>
+                        <i class="fa fa-share" ></i>
+                    </button>
+                </div>
+            </div>
+            <div class="description">
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, consectetur quas in ea ipsam cupiditate tenetur minus ad quis earum aspernatur fugit esse distinctio nam veritatis sunt doloremque voluptatibus magni!</p>
+            </div>
+            <div class="comments">
+                <form action="">
+                    <textarea name="" id="" placeholder="Comment here" ></textarea>
+                    <button>
+                        Send
+                    </button>
+                </form>
+                <section id="list">
+                    <div class="user-avatar">
+                        <span class="avatar" style="background-image: url('https://media.licdn.com/dms/image/D5603AQEvrxMJig5-IQ/profile-displayphoto-shrink_100_100/0/1666723605404?e=1694649600&v=beta&t=IGW9uuzApVpQK3WigfndC846Tp7vH7F281NegPHgjRo');" ></span>
+                        <span class="username" >@Fahad-Salman</span>
+                    </div>
+                    <div class="user-comment">
+                        <q>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sequi dicta repudiandae accusantium nulla ipsa inventore voluptate saepe omnis perferendis non quam quasi expedita tempora, quia exercitationem est aliquid mollitia?
+                        </q>
+                    </div>
+                    <div class="user-function">
+                        <button>
+                            <i class="fa fa-thumbs-down"></i>
+                        </button>
+                        <button>
+                            <i class="fa fa-thumbs-up" ></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="suggested" >
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div class="video-thumb" style="background-image: url('media/sebastien.jpg');"></div>
+                    <div class="flex-item-body">
+                        <h5>Another Video</h5>
+                        <p>Tube Title</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div class="video-thumb" style="background-image: url('media/sebastien.jpg');"></div>
+                    <div class="flex-item-body">
+                        <h5>Another Video</h5>
+                        <p>Tube Title</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; MyTube 2023
+    </footer>
+</body>
+</html>
