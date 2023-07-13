@@ -144,6 +144,8 @@ video{
     border-bottom-left-radius: 5px;
     border: 1px solid rgb(207, 207, 207);
     border-right: 0;
+    width: 50%;
+    padding: 3px;
 }
 
 .comments button{
@@ -160,6 +162,18 @@ video{
     border-radius: 10px;
     padding: 10px;
     width: 90%;
+}
+
+.comments .list-items:nth-child(odd){
+    border-bottom: 1px solid #bababa;
+    margin-bottom: 15px;
+}
+.comments .list-items:nth-child(even){
+    border-bottom: 1px solid #bababa;
+    margin-bottom: 15px;
+}
+.comments .list-items:last-child{
+    border: 0;
 }
 
 .user-avatar{
@@ -179,7 +193,7 @@ video{
 }
 
 .user-avatar .username{
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 .user-comment{
@@ -191,6 +205,7 @@ video{
 .user-function{
     display: flex;
     justify-content: end;
+    margin-bottom: 10px;
 }
 
 .user-function i{
