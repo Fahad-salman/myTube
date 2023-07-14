@@ -5,6 +5,7 @@
 body{
     margin: 0;
     height: 100vh;
+    background-color: #1c1c1c;
 }
 
 
@@ -16,7 +17,7 @@ a{
 
 nav{
     display: flex;
-    background-color: rgb(178, 178, 178);
+    background-color: #eb5f2800;
     padding: 10px 15px;
 }
 
@@ -106,6 +107,7 @@ video{
 
 .video-details h1{
     margin: 0px;
+    color: #fafaff;
 }
 
 .video-details{
@@ -114,8 +116,8 @@ video{
 }
 
 .views{
-    color: rgb(119, 119, 119);
-    font-size: 14px;
+    color: rgb(189, 189, 189);
+    font-size: 13px;
 }
 
 .functions button{
@@ -132,7 +134,8 @@ video{
 .description p{
     margin: 0;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: #fafaff;
 }
 
 .comments form{
@@ -156,20 +159,20 @@ video{
 }
 
 .comments #list{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    background-color: #e5e5e5;
+    background-color: #333333;
     border-radius: 10px;
     padding: 10px;
     width: 90%;
 }
 
 .comments .list-items:nth-child(odd){
-    border-bottom: 1px solid #bababa;
+    border-bottom: 1px solid #898989;
     margin-bottom: 15px;
 }
 .comments .list-items:nth-child(even){
-    border-bottom: 1px solid #bababa;
+    border-bottom: 1px solid #898989;
     margin-bottom: 15px;
 }
 .comments .list-items:last-child{
@@ -194,12 +197,15 @@ video{
 
 .user-avatar .username{
     margin-left: 2%;
+    color: #fafaff;
+    font-weight: 600;
 }
 
 .user-comment{
     padding: 1rem 3rem;
     width: 80%;
-    text-align: justify;
+    text-align: start;
+    color: #fafaff;
 }
 
 .user-function{
@@ -248,7 +254,8 @@ video{
 .flex-item{
     display: flex;
     margin-bottom: 15px;
-    background-color: whitesmoke;
+    background-color: #333333;
+    border-radius: 5px;
     /* box-shadow: 1px 1px 9px 5px rgba(171,170,170,0.57);
     -webkit-box-shadow: 1px 1px 9px 5px rgba(171,170,170,0.57);
     -moz-box-shadow: 1px 1px 9px 5px rgba(171,170,170,0.57); */
@@ -262,15 +269,64 @@ video{
 
 .flex-item-body h5, p {
     margin: 8px;
+    color: #fafaff;
 }
 
 .video-thumb{
-    height: 100px;
-    width: 35%;
+    position: relative;
+    height: 110px;
+    width: 220px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.video-length{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.706);
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    bottom: 3px;
+    right: 3px;
+}
+
+.video-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.video-info {
+    font-size: 0.8rem;
+}
+
+.text-limit{
+    margin: 0px;
+    margin-left: 8px;
+
+    margin-right: 6px;
+
+    margin-bottom: 4px;
+    margin-top: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.view-text{
+    font-size: 0.7rem;
+}
+
+.font-bold{
+    font-weight: 600;
+}
+
 
 /* end suggested section style */
 
@@ -281,5 +337,46 @@ video{
 footer{
     padding: 10px;
     text-align: center;
+    color: #fafaff;
 }
 /* end footer */
+
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a{
+        
+        margin-bottom: 10px;
+    }
+    nav .brand{
+        border-right: none;
+    }
+    nav .search-form form , .search-form input{
+        width: 100%;
+    }
+    nav .user-menu{
+        margin-top: 10px;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section {
+        margin: 0px;
+        padding: 5px;
+    }
+    main #player {
+        width: 96%;
+    }
+    main #suggested {
+        width: 95%;
+    }
+    .user-comment {
+        padding: 10px;
+        width: 80%;
+        text-align: start;
+    }
+}
